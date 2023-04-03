@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Subscription Form</title>
+</head>
+<body>
+	<h1>Subscription Form</h1>
+	<form method="post" action="subscribe.php">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required><br><br>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required><br><br>
+
+		<label for="subscription_plan">Subscription Plan:</label>
+		<select id="subscription_plan" name="subscription_plan" required>
+			<option value="">Select a subscription plan</option>
+			<option value="basic">Basic</option>
+			<option value="premium">Premium</option>
+			<option value="ultimate">Ultimate</option>
+		</select><br><br>
+
+		<input type="submit" value="Subscribe">
+	</form>
+</body>
+</html>
